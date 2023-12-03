@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+    display: flex;
+   }
+    .scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollAnimation 5s linear infinite;
+    color: rgb(47, 38, 38);
+    font-size: 70px;;
+  }
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(450%);
+    }
+  }
+
+  .blinking-text {
+    animation: blinkAnimation 1s alternate infinite;
+    font-size: 50px;;
+    color: rgb(47, 40, 48);
+  }
+
+  @keyframes blinkAnimation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+    <div class="scrolling-text">bhu</div>
+    <div class="blinking-text">bhu</div>
+
+</div>
+</body>
+</html>
